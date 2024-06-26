@@ -8,25 +8,29 @@
     <title>Крестики-нолики</title>
 </head>
 <body class="flex">
-    
-    <div id="tic-tac-toe">
-        <div class="title">
-            <h4>Крестики нолики <br>(после игры обновить страницу)</h4>
-        </div>
-        <div class="line-1">
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-        </div>
-        <div class="line-2">
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-        <div class="line-3">
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-            <div class="cell" onclick="test('1-1', this)"></div>
-        </div>
+    <div class="tic-tac-toe">
+    <h1>Крестики-нолики</h1>
+    <table>
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+    <button onclick="startGame()">Заново</button>
+    </div>
+    <div class="endgame">
+        <div class="text"></div>
     </div>
     <nav>
         <a href="">Мой GitHub</a>
